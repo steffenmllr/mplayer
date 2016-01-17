@@ -114,6 +114,9 @@ MPlayer.prototype = _.extend({
     stop: function() {
         this.player.cmd('stop');
     },
+    exit: function() {
+        this.player.exit();
+    },
     seek: function(seconds) {
         this.player.cmd('seek', [seconds, 2]);
     },
